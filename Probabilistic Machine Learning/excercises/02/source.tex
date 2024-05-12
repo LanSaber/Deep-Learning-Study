@@ -1,0 +1,42 @@
+\documentclass[UTF8]{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\title{Probability: Univariate Models}
+\date{}
+\begin{document}
+\maketitle
+
+\noindent 1.
+
+\noindent a.
+
+\begin{equation}
+    P(H, e_1, e_2) = P(e_1, e_2 | H)P(H)\label{eq:1-1}
+\end{equation}
+ 
+
+\begin{align}
+    P(H | e_1, e_2) &= \frac{P(H, e_1, e_2)}{P(e_1, e_2)}\notag\\
+                    &= \frac{P(e_1, e_2 | H)P(H)}{P(e_1, e_2)}\label{eq:1-2}
+\end{align}
+
+Therefore, the second sets of numbers are sufficient for the calculation.
+
+\noindent b.
+
+from $E_1\perp E_2 | H$, we know that:
+
+\begin{equation}
+    P(e_1, e_2| H) = P(e_1|H)P(e_2|H)\label{eq:1-3}
+\end{equation}
+
+Therefore, from equations \ref{eq:1-3} and \ref{eq:1-2}, there are:
+
+\begin{align}
+    P(H | e_1, e_2) &= \frac{P(e_1, e_2 | H)P(H)}{P(e_1, e_2)}\notag\\
+                    &= \frac{P(e_1|H)P(e_2|H)P(H)}{P(e_1, e_2)}
+\end{align}
+
+Therefore, the first sets of numbers are sufficient for the calculation.
+
+\end{document}
