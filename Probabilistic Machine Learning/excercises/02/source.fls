@@ -42,6 +42,7 @@ INPUT e:/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 OUTPUT e:/研究生/NYU上学/NYU study/learn/Probabilistic Machine Learning/excercises/02/source.pdf
 INPUT e:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT e:/研究生/NYU上学/NYU study/learn/Probabilistic Machine Learning/excercises/02/source.aux
+INPUT e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb

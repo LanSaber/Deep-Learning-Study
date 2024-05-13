@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.21)  12 MAY 2024 19:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.21)  14 MAY 2024 00:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -118,7 +118,7 @@ Overfull \hbox (85.67973pt too wide) detected at line 79
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = 1\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = 0) = \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = 1)\OML/cmm/m/it/10 ; P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = 0\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = 1) = \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = 0)\OML/cmm/m/it/10 ; P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = 1\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = 1) = \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = 1)
  []
 
-[2] (e:/研究生/NYU上学/NYU study/learn/Probabilistic Machine Learning/excercises/02/source.aux) ) 
+[2] [3] (e:/研究生/NYU上学/NYU study/learn/Probabilistic Machine Learning/excercises/02/source.aux) ) 
 Here is how much of TeX's memory you used:
  914 strings out of 492623
  10883 string characters out of 6133290
@@ -127,11 +127,11 @@ Here is how much of TeX's memory you used:
  7803 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  27i,8n,21p,302b,193s stack positions out of 5000i,500n,10000p,200000b,80000s
-<e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "e:/研究生/NYU上学/NYU study/learn/Probabilistic Machine Learning/excercises/02/source.pdf" (2 pages, 57070 bytes).
+<e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "e:/研究生/NYU上学/NYU study/learn/Probabilistic Machine Learning/excercises/02/source.pdf" (3 pages, 67792 bytes).
 PDF statistics:
- 31 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
+ 38 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

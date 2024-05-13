@@ -91,4 +91,49 @@ However,
 $$P(X_1 = 0, X_2 = 0, X_3 = 1) = 0 \neq P(X_1 = 0)P(X_2 = 0)P(X_3 = 1)$$
 
 Therefore, pairwise independence between all pairs of variables does not necessarily imply mutual independence.
+
+\noindent 3.
+
+It is obvious that if
+
+$$p(x,y|z)=p(x|z)p(y|z)$$
+
+then we let $g(x,z)=p(x|z), h(y,z)=p(y|z)$. Therefore, 
+
+$$p(x,y|z)=g(x,z)h(y,z)$$
+
+And if there is
+
+$$p(x,y|z)=g(x,z)h(y,z)$$
+
+then,
+
+\begin{align*}
+    p(y|z) = \int p(x,y|z)dx = h(y,z)\int g(x,z)dx
+\end{align*}
+
+We mark $q(z) = \int g(x,z)dx$, Therefore,
+
+$$p(y|z) = h(y,z)q(z)$$
+
+Similarily, we can get
+
+$$p(x|z) = g(x,z)r(z)$$
+
+Where $r(z) = \int h(y,z)dy$
+
+Therefore
+
+\begin{align*}
+    p(x,y|z) &= \frac{p(x|z)p(y|z)}{r(z)q(z)} \\
+    \int p(x,y|z)dx& = \frac{p(y|z)}{r(z)q(z)}\int p(x|z)dx\\
+    p(y|z) &= \frac{p(y|z)}{r(z)q(z)}\\
+    r(z)q(z) & = 1
+\end{align*}
+
+Therefore, there is:
+
+$$p(x,y|z) = p(x|z)p(y|z)$$
+
+\qedsymbol
 \end{document}
