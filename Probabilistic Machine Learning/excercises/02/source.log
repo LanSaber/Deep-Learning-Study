@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.21)  14 MAY 2024 00:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2020.3.21)  21 MAY 2024 03:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -87,6 +87,9 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@postskip=\skip47
 \thm@headsep=\skip48
 \dth@everypar=\toks24
+) (e:/texlive/2019/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup4
 )
 
 LaTeX Warning: Unused global option(s):
@@ -95,43 +98,51 @@ LaTeX Warning: Unused global option(s):
 (e:/研究生/NYU上学/NYU study/learn/Probabilistic Machine Learning/excercises/02/source.aux)
 \openout1 = `source.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 7.
+LaTeX Font Info:    ... okay on input line 7.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 8.
+ (e:/texlive/2019/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
 
 LaTeX Warning: No \author given.
 
 [1
 
 {e:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (85.67973pt too wide) detected at line 79
+Overfull \hbox (85.67973pt too wide) detected at line 80
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = 1\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = 0) = \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = 1)\OML/cmm/m/it/10 ; P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = 0\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = 1) = \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = 0)\OML/cmm/m/it/10 ; P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = 1\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = 1) = \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[] \OT1/cmr/m/n/10 = 1)
  []
 
-[2] [3] (e:/研究生/NYU上学/NYU study/learn/Probabilistic Machine Learning/excercises/02/source.aux) ) 
+[2]
+Overfull \hbox (90.42876pt too wide) detected at line 152
+[]
+ []
+
+[3] [4] (e:/研究生/NYU上学/NYU study/learn/Probabilistic Machine Learning/excercises/02/source.aux) ) 
 Here is how much of TeX's memory you used:
- 914 strings out of 492623
- 10883 string characters out of 6133290
- 76235 words of memory out of 5000000
- 4880 multiletter control sequences out of 15000+600000
- 7803 words of font info for 29 fonts, out of 8000000 for 9000
+ 941 strings out of 492623
+ 11437 string characters out of 6133290
+ 81248 words of memory out of 5000000
+ 4897 multiletter control sequences out of 15000+600000
+ 8792 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,8n,21p,302b,193s stack positions out of 5000i,500n,10000p,200000b,80000s
-<e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "e:/研究生/NYU上学/NYU study/learn/Probabilistic Machine Learning/excercises/02/source.pdf" (3 pages, 67792 bytes).
+ 27i,10n,21p,545b,193s stack positions out of 5000i,500n,10000p,200000b,80000s
+<e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><e:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on "e:/研究生/NYU上学/NYU study/learn/Probabilistic Machine Learning/excercises/02/source.pdf" (4 pages, 109893 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

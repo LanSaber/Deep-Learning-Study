@@ -1,6 +1,7 @@
 \documentclass[UTF8]{article}
 \usepackage{amsmath}
 \usepackage{amsthm}
+\usepackage{mathrsfs}
 \title{Probability: Univariate Models}
 \date{}
 \begin{document}
@@ -136,4 +137,20 @@ Therefore, there is:
 $$p(x,y|z) = p(x|z)p(y|z)$$
 
 \qedsymbol
+
+\noindent 3.
+
+With the definition of convolution, we have:
+
+\begin{align*}
+    p(y)& = \int_{-\infty}^{+\infty}\frac{1}{\sqrt{2\pi\sigma_1^2}}e^{-\frac{1}{2\sigma_1^2}(\tau-\mu_1)^2}\frac{1}{\sqrt{2\pi\sigma_2^2}}e^{-\frac{1}{2\sigma_2^2}(y-\tau-\mu_2)^2}d\tau\\
+        &= \int_{-\infty}^{+\infty}\frac{1}{2\pi\sigma_1\sigma_2}e^{-\frac{1}{2\sigma_1^2\sigma_2^2}[(\sigma_1^2+\sigma_2^2)\tau^2+(2\sigma_1^2-2\sigma_2^2\mu_1-2\sigma_1^2y)\tau+\sigma_2^2\mu_1^2+\sigma_1^2y^2-2\sigma_1^2\mu_2y+\sigma_1^2\mu_2^2]}d\tau\\
+        &= \int_{-\infty}^{+\infty}\frac{1}{2\pi\sigma_1\sigma_2}e^{-\frac{\sigma_1^2+\sigma_2^2}{2\sigma_1^2\sigma_2^2}[\tau^2-2\frac{\sigma_1^2 y+\sigma_2^2 \mu_1-\sigma_1^2 \mu_2}{\sigma_1^2+\sigma_2^2}\tau+(\frac{\sigma_1^2 y+\sigma_2^2 \mu_1-\sigma_1^2 \mu_2}{\sigma_1^2+\sigma_2^2})^2-(\frac{\sigma_1^2 y+\sigma_2^2 \mu_1-\sigma_1^2 \mu_2}{\sigma_1^2+\sigma_2^2})^2+\frac{\sigma_2^2 \mu_1^2+\sigma_1^2(y-\mu_2)^2}{\sigma_1^2+\sigma_2^2}]}d\tau\\
+        &= \int_{-\infty}^{+\infty}\frac{1}{2\pi\sigma_1\sigma_2}e^{-\frac{\sigma_1^2+\sigma_2^2}{2\sigma_1^2\sigma_2^2}[(\tau-\frac{\sigma_1^2 y+\sigma_2^2 \mu_1-\sigma_1^2 \mu_2}{\sigma_1^2+\sigma_2^2})^2+\frac{\sigma_1^2\sigma_2^2(y-\mu_1-\mu_2)^2}{(\sigma_1^2+\sigma_2^2)^2}]}d\tau\\
+        & = \frac{1}{\sqrt{2\pi(\sigma_1^2+\sigma_2^2)}}e^{-\frac{(y-\mu_1-\mu_2)^2}{2(\sigma_1^2+\sigma_2^2)}}\int_{-\infty}^{+\infty}\frac{1}{2\pi\sqrt{\frac{\sigma_1^2\sigma_2^2}{\sigma_1^2+\sigma_2^2}}}e^{-\frac{\sigma_1^2+\sigma_2^2}{2\sigma_1^2\sigma_2^2}(\tau-\frac{\sigma_1^2 y+\sigma_2^2 \mu_1-\sigma_1^2 \mu_2}{\sigma_1^2+\sigma_2^2})^2}d\tau\\
+        & = \frac{1}{\sqrt{2\pi(\sigma_1^2+\sigma_2^2)}}e^{-\frac{(y-\mu_1-\mu_2)^2}{2(\sigma_1^2+\sigma_2^2)}}
+\end{align*}
+
+Therefore, $p(y) = \mathcal{N}(y|\mu_1+\mu_2, \sigma_2^2+\sigma_2^2)$
+
 \end{document}
