@@ -1,5 +1,7 @@
 \documentclass[UTF8]{article}
 \usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{mathrsfs}
 \title{Probability: Univariate Models}
@@ -138,7 +140,7 @@ $$p(x,y|z) = p(x|z)p(y|z)$$
 
 \qedsymbol
 
-\noindent 3.
+\noindent 4.
 
 With the definition of convolution, we have:
 
@@ -152,5 +154,167 @@ With the definition of convolution, we have:
 \end{align*}
 
 Therefore, $p(y) = \mathcal{N}(y|\mu_1+\mu_2, \sigma_2^2+\sigma_2^2)$
+
+\noindent 5.
+
+From the information we know, there is:
+
+\begin{align*}
+    P(\min(x,y)\leq t) &= P(x\leq t , y \leq t) + P(x\leq t , y \ge t) + P(x\ge t , y \leq t) \\
+    &=t^2 + 2t(1-t)\\
+    &=2t - t^2
+\end{align*}
+
+Therefore,
+
+\begin{align*}
+    p(\min(x,y)= t) &= \frac{dP}{dt}\\
+    &=2 - 2t
+\end{align*}
+
+Therefore, we can get,
+
+\begin{align*}
+    \mathbb{E}(\min(x,y)= t) &= \int_{0}^{1}2t-2t^2dt\\
+    &=(t^2 - \frac{2t^3}{3})|_{0}^{1}\\
+    &=\frac{1}{3}
+\end{align*}
+
+Therefore, the expected location of the ;eftmost point is $\frac{1}{3}$
+
+\noindent 6.
+
+\begin{align*}
+    \mathbb{V}[X+Y] &= \mathbb{E}[(X+Y)^2] - \mathbb{E}^2(X+Y)\\
+                    &= \mathbb{E}(X^2) + \mathbb{E}(Y^2) + 2\mathbb{E}(XY) - (\mathbb{E}^2(X)+2\mathbb{E}(X)\mathbb{E}(Y)+\mathbb{E}^2(Y))\\
+                    &= \mathbb{E}(X^2) - \mathbb{E}^2(X) + \mathbb{E}(Y^2) - \mathbb{E}^2(Y) + 2(\mathbb{E}(XY) - \mathbb{E}(X)\mathbb{E}(Y))\\
+                    &= \mathbb{V}[X] + \mathbb{V}[Y] + 2\text{Cov}[X, Y]
+\end{align*}
+
+\noindent 7.
+
+\begin{align*}
+    p(x|a, b) = \frac{b^a}{\Gamma(a)}x^{a-1}e^{-xb}
+\end{align*}
+
+Because $Y=1/X$, therefore,
+
+\begin{align*}
+    p(y|a, b) = \frac{b^a}{\Gamma(a)}y^{1-a}e^{-\frac{b}{y}}
+\end{align*}
+
+\noindent 8.
+
+\begin{align*}
+    p(\theta|a, b) &= \frac{1}{B(a, b)}\theta^{a-1}(1-\theta)^{b-1}\\
+    \frac{dp}{dt}&= \frac{1}{B(a, b)}[(a-1)\theta^{a-2}(1-\theta)^{b-1}-(b-1)\theta^{a-1}(1-\theta)^{b-2}]
+\end{align*}
+
+Therefore, if $\frac{dp}{dt} = 0$, then, 
+
+\begin{align*}
+    (a-1)\theta^{a-2}(1-\theta)^{b-1}&=(b-1)\theta^{a-1}(1-\theta)^{b-2}\\
+    (a-1)(1-\theta) &= (b-1)\theta\\
+    \theta &= \frac{a-1}{a+b-2}
+\end{align*}
+
+Therefore, $\text{mode}(\theta) = \frac{a-1}{a+b-2}$
+
+\begin{align*}
+    \mathbb{E}[\theta] = \frac{1}{B(a, b)}\int_{0}^{1}\theta^{a}(1-\theta)^{b-1}d\theta
+\end{align*}
+
+We know that
+
+\begin{align*}
+    \int_{0}^{1}p(\theta|a+1, b) = \frac{1}{B(a+1, b)}\int_{0}^{1}\theta^{a}(1-\theta)^{b-1}d\theta = 1
+\end{align*}
+
+Therefore
+
+\begin{align*}
+    \int_{0}^{1}\theta^{a}(1-\theta)^{b-1}d\theta = B(a+1, b)
+\end{align*}
+
+So
+
+\begin{align*}
+    \mathbb{E}[\theta] = \frac{B(a+1, b)}{B(a, b)} = \frac{a}{a+b}
+\end{align*}
+
+\begin{align*}
+    \mathbb{E}[\theta^2] &= \frac{1}{B(a, b)}\int_{0}^{1}\theta^{a+1}(1-\theta)^{b-1}d\theta\\
+    &=\frac{B(a+2, b)}{B(a, b)}\\
+    &=\frac{a(a+1)}{(a+b)(a+b+1)}\\
+\end{align*}
+
+Therefore,
+
+\begin{align*}
+    \mathbb{V}[\theta] &= \mathbb{E}[\theta^2] - \mathbb{E}^2[\theta]\\
+    &=\frac{ab}{(a+b)^2(a+b+1)}\\
+\end{align*}
+
+\noindent 9.
+
+From the information, we know that
+\begin{equation*}
+\begin{aligned}
+    P(T=1|D=1) &= 0.99&P(T=0|D=0)&= 0.99\\
+    P(T=0|D=1) &= 0.01&P(T=1|D=0)&= 0.01\\
+    P(D=1) &= 10^{-4}&P(D=0) &= 1-10^{-4}\\
+\end{aligned}
+\end{equation*}
+
+Therefore, 
+
+\begin{align*}
+    P(D=1|T=1) &= \frac{P(T=1,D=1)}{P(T=1)}\\
+               &= \frac{P(T=1|D=1)P(D=1)}{P(T=1|D=0)P(D=0)+P(T=1|D=1)P(D=1)}\\
+               &= \frac{0.99*0.0001}{0.01*(1-0.0001)+0.99*0.0001}\\
+               &= \frac{1}{102}
+\end{align*}
+
+So there is only a $\frac{1}{102}$ probability having the disease.
+
+\noindent 10.
+
+We set the random variable $C$ represents whether the person did the crime. $C=1$ means he did. $C=0$ mans he did not. And
+We set the random variable $B$ represents whether the person's blood type is the same as the evidence's. $B=1$ means it is. $B=0$ mans it is not. From
+the information we know that$P(B=1)=0.01$ and $P(B=1|C=1)=1$
+
+\noindent a.
+
+The prosecutor means if $P(B=1|C=0)$ is $0.01$, then $P(C=1|B=1)$ is 0.99, which is wrong. Because it is $P(B=0|C=0)$ is 0.99 instead of
+$P(C=1|B=1)$.
+
+\noindent b.
+
+From the information we know that $P(C=1) = \frac{1}{800000}$, Therefore $P(C=1|B=1) = \frac{P(C=1, B=1)}{P(B=1)}=\frac{P(B=1|C=1)P(C=1)}{P(B=1)} = \frac{\frac{1}{800000}}{0.01}=\frac{1}{8000}$, so there is
+definitely relevant.
+
+\noindent 11.
+
+\noindent a.
+
+\begin{align*}
+    P(G=1|B=1) &=  \frac{P(G=1, B=1)}{P(B=1)}\\
+    &=\frac{\frac{1}{2}}{\frac{3}{4}}\\
+    &=\frac{2}{3}
+\end{align*}
+
+\noindent b.
+
+The gender of the other child is independent from this child, so the probability is $\frac{1}{2}$.
+
+\noindent 12.
+
+\begin{align*}
+    \int_{0}^{2\pi}\int_{0}^{+\infty}re^{-\frac{r^2}{2\sigma^2}}drd\theta&=\int_{0}^{2\pi}(-\sigma^2e^{-\frac{r^2}{2\sigma^2}})|_{0}^{+\infty}d\theta\\
+    &=\int_{0}^{2\pi}\sigma^2d\theta\\
+    &=2\pi\sigma^2
+\end{align*}
+
+Therefore, $Z=\sqrt{2\pi\sigma^2}$
 
 \end{document}
