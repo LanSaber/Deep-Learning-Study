@@ -1,0 +1,37 @@
+\documentclass[UTF8]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\title{Probability: Multivariate Models}
+\date{}
+\begin{document}
+\maketitle
+
+\noindent 1.
+
+\begin{align*}
+    Cov(X, Y) &= \mathbb{E}[XY] - \mathbb{E}[X]\mathbb{E}[Y]\\
+    &=\mathbb{E}[X^3] - \mathbb{E}[X]\mathbb{E}[X^2]
+\end{align*}
+
+Because $X\sim U(-1, 1)$, therefore $\mathbb{E}[X] = 0, \mathbb{E}[X^3] = 0$
+
+\begin{align*}
+    Cov(X, Y) &=\mathbb{E}[X^3] - \mathbb{E}[X]\mathbb{E}[X^2]\\
+    &=0
+\end{align*}
+
+therefore
+
+\begin{align*}
+    \rho(X, Y) &=\frac{Cov(X, Y)}{\sqrt{\mathbb{V}[X]\mathbb{V}[Y]}}\\
+    &=0
+\end{align*}
+
+Although $X$ and $Y$ are uncorrelated, it is definite that $Y$ is dependent on $X$.
+
+\noindent 2.
+
+\end{document}
