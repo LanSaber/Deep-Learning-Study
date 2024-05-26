@@ -34,4 +34,21 @@ Although $X$ and $Y$ are uncorrelated, it is definite that $Y$ is dependent on $
 
 \noindent 2.
 
+To make the correlation coefficient meaningful, there must be $\mathbb{V}[X]>0$ and $\mathbb{V}[Y]>0$. Therefore, considering a random variable $Z = aX + Y$.
+
+\begin{align*}
+	\mathbb{V}[Z] &= \mathbb{V}[aX+Y]\\
+	&=\mathbb{V}[X]a^2+2\text{Cov}[X, Y]a+\mathbb{V}[Y]\\
+\end{align*}
+
+Because $\mathbb{V}[Z]\ge 0$ for all $a$. Therefore, 
+
+\begin{align*}
+	\Delta &\le 0\\
+	4\text{Cov}^2[X, Y] - 4\mathbb{V}[X]\mathbb{V}[Y]&\le 0\\
+	\frac{\text{Cov}^2[X, Y]}{\mathbb{V}[X]\mathbb{V}[Y]}&\le 1\\
+\end{align*}
+
+So, there is $\rho^2\le 1$. Therefore, $-1\le\rho\le 1$.
+
 \end{document}
