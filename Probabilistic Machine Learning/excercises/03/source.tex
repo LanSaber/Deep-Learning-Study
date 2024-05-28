@@ -51,4 +51,26 @@ Because $\mathbb{V}[Z]\ge 0$ for all $a$. Therefore,
 
 So, there is $\rho^2\le 1$. Therefore, $-1\le\rho\le 1$.
 
+\noindent 3.
+
+\begin{align*}
+	\text{Cov}[X, Y] &= \mathbb{E}[XY]-\mathbb{E}[X]\mathbb{E}[Y]\\
+	&=\mathbb{E}[aX^2+bX] - \mathbb{E}[X]\mathbb{E}[aX+b]\\
+	&=a\mathbb{E}[X^2] + b\mathbb{E}[X] - \mathbb{E}[X](a\mathbb{E}[X]+b)\\
+	&= a\mathbb{V}[X]\\
+\end{align*}
+
+\begin{align*}
+	\mathbb{V}[X]\mathbb{V}[Y] &= \mathbb{V}[X]\mathbb{V}[aX+b]\\
+	&=a^2\mathbb{V}^2[X]
+\end{align*}
+
+Therefore, 
+\begin{align*}
+\rho(X, Y)&=\frac{	\text{Cov}[X, Y]}{\sqrt{\mathbb{V}[X]\mathbb{V}[Y]}}\\
+&=\frac{a}{|a|}
+\end{align*}
+
+Therefore, if $a>0$, then $\rho(X, Y)=1$. If $a<0$, then $\rho(X, Y)=-1$.
+
 \end{document}
