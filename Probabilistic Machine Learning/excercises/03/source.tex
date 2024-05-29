@@ -73,4 +73,38 @@ Therefore,
 
 Therefore, if $a>0$, then $\rho(X, Y)=1$. If $a<0$, then $\rho(X, Y)=-1$.
 
+\noindent 4.
+
+\noindent a.
+
+\begin{align*}
+	\text{Cov}[Ax] &= \mathbb{E}[(Ax-\mathbb{E}[Ax])(Ax-\mathbb{E}[Ax])^T]\\
+	&=\mathbb{E}[(Ax-A\mathbb{E}[x])(x^TA^T-\mathbb{E}^T[x]A^T)]\\
+	&=\mathbb{E}[A(x-\mathbb{E}[x])(x^T-\mathbb{E}^T[x])A^T]\\
+	&=A\mathbb{E}[(x-\mathbb{E}[x])(x-\mathbb{E}[x])^T]A^T\\
+	&=A\Sigma A^T\\
+\end{align*}
+
+\noindent b.
+
+If $C=AB$, then
+
+\begin{align*}
+	\text{tr}[AB] &= \Sigma_k c_{kk}\\
+	&=\Sigma_k\Sigma_i a_{ki}b_{ik}\\
+	& = \Sigma_k\Sigma_i b_{ik}a_{ki}\\
+	& = \Sigma_i\Sigma_k b_{ik}a_{ki}\\
+	& = \text{tr}[BA]
+\end{align*}
+
+\noindent c.
+
+\begin{align*}
+\mathbb{E}[x^TAx] &= \mathbb{E}[\text{tr}(x^TAx)]\\
+&= \mathbb{E}[\text{tr}(Axx^T)]\\
+&= \text{tr}(A\mathbb{E}[xx^T])\\
+&= \text{tr}(A(\Sigma+mm^T))\\
+&= \text{tr}(A\Sigma)+m^TAm\\
+\end{align*}
+
 \end{document}
