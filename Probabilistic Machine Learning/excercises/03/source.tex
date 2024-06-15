@@ -107,4 +107,34 @@ If $C=AB$, then
 &= \text{tr}(A\Sigma)+m^TAm\\
 \end{align*}
 
+\noindent 5.
+
+\noindent a.
+
+\begin{align*}
+	p(Y\le y) &= p(WX\le y)\\
+	&= p(X\le y| W=1)p(W=1) + p(X\ge -y | W=-1)p(W=-1)\\
+	&= 0.5p(X\le y) + 0.5p(X\le y)\\
+	&= p(X\le y)
+\end{align*}
+
+Because there is $X\sim\mathcal{N}(0,1)$, therefore, $Y\sim\mathcal{N}(0,1)$.
+
+\noindent b.
+
+\begin{align*}
+	\mathbb{E}[XY] &= \mathbb{E}[WX^2]\\
+	&= \mathbb{E}[\mathbb{E}[WX^2|W]]\\
+	&= p(W=1)\mathbb{E}[X^2] + p(W=-1)\mathbb{E}[-X^2]\\ 
+	&= 0.5\mathbb{E}[X^2] - 0.5\mathbb{E}[X^2]\\
+	&= 0
+\end{align*}
+
+Therefore
+\begin{align*}
+	\text{Cov}[X,Y] &= \mathbb{E}[XY] - \mathbb{E}[X]\mathbb{E}[Y]\\
+	&=0
+\end{align*}
+
+
 \end{document}
